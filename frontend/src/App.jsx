@@ -1,7 +1,15 @@
+import CrearPublicacion from "./pages/CrearPublicacion"
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 function App() {
-  return <>
-  
-  </>;
+
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/crear-publicacion" element={< CrearPublicacion />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
